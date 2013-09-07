@@ -1,15 +1,15 @@
 {
-    "SITE_URL": "http://dev.NextBBS.in/#/",
-    "SITE_NAME": "The NextBBS.in",
-    "SUBMIT_A_LINK": "張貼文章",
-    "BOARD": "看板",
-    "SEARCH_BOARD": "搜尋看板",
-    "GOSSIPING": "綜合討論",
-    "STARTUP": "創業",
-    "TECH": "科技新知",
-    "PCSHOPPING": "桌機綜合",
-    "MEDIA": "影片",
-    "LABELS": "分類",
-    "SEARCH_LABEL": "搜尋分類",
-    "ADD_POST": "張貼"
+  "SITE_URL": "http://dev.NextBBS.in/#/",
+  "SITE_NAME": "The NextBBS.in",
+  "SUBMIT_A_LINK": "張貼文章",
+  "BOARD": "看板",
+  "SEARCH_BOARD": "搜尋看板",
+  "GOSSIPING": "綜合討論",
+  "STARTUP": "創業",
+  "TECH": "科技新知",
+  "PCSHOPPING": "桌機綜合",
+  "MEDIA": "影片",
+  "LABELS": "分類",
+  "SEARCH_LABEL": "搜尋分類",
+  "ADD_POST": "張貼"
 }

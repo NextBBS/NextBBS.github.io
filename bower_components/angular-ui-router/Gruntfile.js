@@ -8,7 +8,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-karma');
-  
+
   // Project configuration.
   grunt.initConfig({
     builddir: 'build',
@@ -78,18 +78,18 @@ module.exports = function (grunt) {
         }
       }
     },
-  karma: {
-    options: {
-      configFile: 'config/karma.js'
-    },
-    unit: {
-      singleRun: true
-    },
-    background: {
-      background: true,
-      browsers: [ grunt.option('browser') || 'PhantomJS' ]
+    karma: {
+      options: {
+        configFile: 'config/karma.js'
+      },
+      unit: {
+        singleRun: true
+      },
+      background: {
+        background: true,
+        browsers: [ grunt.option('browser') || 'PhantomJS' ]
+      }
     }
-  }
   });
 
   grunt.registerTask('default', ['build', 'jshint', 'karma:unit']);
@@ -144,7 +144,7 @@ module.exports = function (grunt) {
     var version = grunt.config('pkg.version'), releasedir = grunt.config('builddir');
     promising(this,
       system('git add \'' + releasedir + '\'').then(function () {
-        return system('git commit -m \'release ' + version + '\'');  
+        return system('git commit -m \'release ' + version + '\'');
       }).then(function () {
         return system('git tag \'' + version + '\'');
       })
