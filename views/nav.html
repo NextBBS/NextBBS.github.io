@@ -1,0 +1,29 @@
+
+<div class="nav-inner">
+  <div><a href="{{ &quot;SITE_URL&quot; | translate }}" class="icon-light"><i class="icon-comments-alt icon-light icon-4x"></i></a></div>
+  <div><a href="{{ &quot;SITE_URL&quot; | translate }}" class="icon-light">{{ 'SITE_NAME' | translate }}</a></div>
+  <div class="pure-menu pure-menu-open">
+    <ul>
+      <li translate="BOARD" class="pure-menu-heading"></li>
+      <li>
+        <form class="pure-form pure-g">
+          <input id="search-label" placeholder="{{ &quot;SEARCH_BOARD&quot; | translate }}" type="text" class="form-control"/>
+        </form>
+      </li>
+      <li><a href="#/b/1"><i class="icon-comments-alt"></i>&nbsp;{{ 'GOSSIPING' | translate }}</a></li>
+      <li><a href="#/b/2"><i class="icon-truck"></i>&nbsp;{{ 'STARTUP' | translate }}</a></li>
+      <li><a href="#/b/3"><i class="icon-keyboard"></i>&nbsp;{{ 'TECH' | translate }}</a></li>
+      <li><a href="#/b/4"><i class="icon-laptop"></i>&nbsp;{{ 'PCSHOPPING' | translate }}</a></li>
+      <li><a href="#/b/5"><i class="icon-youtube-play"></i>&nbsp;{{ 'MEDIA' | translate }}</a></li>
+      <li translate="LABELS" class="pure-menu-heading"></li>
+      <li>
+        <form class="pure-form pure-g">
+          <input id="search-label" placeholder="{{ &quot;SEARCH_LABEL&quot; | translate }}" type="text" class="form-control"/>
+        </form>
+      </li>
+      <li><a href="#"><span class="board-label-personal"></span>&nbsp;Ask</a></li>
+      <li><a href="#"><span class="board-label-work"></span>&nbsp;News</a></li>
+      <li><a href="#"><span class="board-label-travel"></span>&nbsp;Info</a></li>
+    </ul>
+  </div>
+</div>
