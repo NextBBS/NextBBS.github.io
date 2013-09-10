@@ -1,9 +1,11 @@
 
-<div ng-click="showPostById(post.id)" ng-class="{'post-item-selected': $stateParams.postId == post.id}" ng-repeat="post in posts | orderBy:'id': true" class="post-item pure-g unselectable">
-  <div class="pure-u"><img alt="Tilo Mitra&quot;s avatar" src="http://dummyimage.com/64x64/000/fff.png&amp;text=文章{{post.id}}" height="64" width="64" class="post-avatar"/></div>
-  <div class="pure-u-3-4">
-    <h6 class="post-author-name">{{post.author.name}}<span class="pull-right label label-default label-small"><i class="icon-reply icon-light">20</i></span><span class="pull-right label label-success label-small"><i class="icon-thumbs-up icon-light">100</i></span></h6>
-    <h4 class="post-title">{{post.title}}</h4>
-    <p class="post-subtitle">{{post.subtitle}}</p>
+<div infinite-scroll="posts.nextPage()" infinite-scroll-disabled="reddit.busy" infinite-scroll-distance="1">
+  <div ng-click="showPostById(post.id)" ng-class="{'post-item-selected': $stateParams.postId == post.id}" ng-repeat="post in posts | orderBy:'id': true" class="post-item pure-g unselectable">
+    <div class="pure-u"><img alt="Tilo Mitra&quot;s avatar" src="http://dummyimage.com/64x64/000/fff.png&amp;text=文章{{post.id}}" height="64" width="64" class="post-avatar"/></div>
+    <div class="pure-u-3-4">
+      <h6 class="post-author-name">{{post.author.name}}<span class="pull-right label label-default label-small"><i class="icon-reply icon-light">20</i></span><span class="pull-right label label-success label-small"><i class="icon-thumbs-up icon-light">100</i></span></h6>
+      <h4 class="post-title">{{post.title}}</h4>
+      <p class="post-subtitle">{{post.subtitle}}</p>
+    </div>
   </div>
 </div>
